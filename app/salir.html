@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body >
+
+    <!-- Header- menu de navegaciones -->
+    <div class="container-fluid">
+     <header class="row">
+     <div class="col-12 ">
+    
+        <nav class="py0 fixed-top navbar bg-beige navbar-expand-lg " >
+            <div class="container">
+                <a href="#principal" class="navbar-brand fw-bold">
+                 <img src="img/icon1.svg" width="25" class="me-3">
+                 Art 1.0
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active fw-bold">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedido.html" class="nav-link active fw-bold ">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ventas.html" class="nav-link active fw-bold">Ventas</a>
+                        </li>
+                        <!-- menu desplegable -->
+                        <li class="nav-item dropdown">
+                            <a 
+                            class="nav-link active dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                        >
+                                Registrar
+                            </a>
+                            <ul class="dropdown-menu DR">
+                                <li><a class="dropdown-item" href="producto.html">Producto</a></li>
+                                <li><a class="dropdown-item" href="categoria.html">Categoria</a></li>
+                                <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                           
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="salir.html" class="nav-link active fw-bold">Salir</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+    
+      </div>
+    </header>
+    </div>
+
+<!-- FORMULARIO -->
+<div class="container" id="productos">
+    <section class="row py-5">
+        <div class="col-12">
+
+            <h2 class="text-center py-4">Iniciar Sesión</h2>
+        </div>
+       <article class="bg-light  col-12 col-md-8 col-lg-6 mx-auto">
+<form class="border  p-4" action="get">
+<div class="mb-3">
+    <label for="usuario" class="form-label">
+
+        Usuario:
+    </label>
+    <input type="text" id="usuario" class="form-control">
+</div>
+<div class="mb-3">
+    <label for="contraseña" class="form-label">
+Contraseña::
+    </label>
+    <input type="password" id="contraseña" class="form-control">
+</div>
+
+<div class="mb-3">
+   <button class="btn DR  mx-auto d-block " type="submit">
+    Ingresar</button>
+</div>
+</form>
+       </article>
+
+</section>
+</div>
+
+
+
+
+
+   
+
+<!-- pie de pagina -->
+<div class="container-fluid bg-dark">
+<div class="container">
+
+    <section class="row text-light d-flex">
+
+    <article class="order-1 order-md-0 col-12 col-md-8 pt-3">
+<p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Luz Raquel Zabaleta Quispe</p>
+    </article>
+    <article class="pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+    <i class="bi bi-facebook fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.youtube.com/@brennerfineart">
+    <i class="bi bi-youtube fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.instagram.com/mediomixtoarte/reel/C7Cl1-QvPc5/">
+    <i class="bi bi-instagram fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://wa.link/gscbh9">
+    <i class="bi bi-whatsapp fs-3 "></i>
+</a>
+    </article>
+</section>
+
+</div>
+</div>
+    <script src="../js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>

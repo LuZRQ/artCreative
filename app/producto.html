@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body >
+
+    <!-- Header- menu de navegaciones -->
+    <div class="container-fluid">
+     <header class="row">
+     <div class="col-12 ">
+    
+        <nav class="py0 fixed-top navbar bg-beige navbar-expand-lg " >
+            <div class="container">
+                <a href="#principal" class="navbar-brand fw-bold">
+                 <img src="img/icon1.svg" width="25" class="me-3">
+                 Art 1.0
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active fw-bold">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedido.html" class="nav-link active fw-bold ">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ventas.html" class="nav-link active fw-bold">Ventas</a>
+                        </li>
+                        <!-- menu desplegable -->
+                        <li class="nav-item dropdown">
+                            <a 
+                            class="nav-link active dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                        >
+                                Registrar
+                            </a>
+                            <ul class="dropdown-menu DR">
+                                <li><a class="dropdown-item" href="producto.html">Producto</a></li>
+                                <li><a class="dropdown-item" href="categoria.html">Categoria</a></li>
+                                <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                           
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="salir.html" class="nav-link active fw-bold">Salir</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+    
+      </div>
+    </header>
+    </div>
+
+
+<!-- FORMULARIO -->
+<div class="container" id="agregar-producto">
+    <section class="row py-5">
+        <div class="col-12">
+            <h2 class="text-center py-4">Agregar Producto</h2>
+        </div>
+        <article class="bg-light col-12 col-md-8 col-lg-6 mx-auto">
+            <form id="productoForm" class="border p-4" action="post" method="post">
+                <div class="mb-3">
+                    <label for="nombre-producto" class="form-label">Nombre del Producto</label>
+                    <input type="text" id="nombre-producto" name="nombre-producto" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" class="form-control" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="precio-producto" class="form-label">Precio</label>
+                    <input type="number" step="0.01" id="precio-producto" name="precio-producto" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoría</label>
+                    <input type="text" id="categoria" name="categoria" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inventario" class="form-label">Inventario (Cantidad Disponible)</label>
+                    <input type="number" id="inventario" name="inventario" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="codigo-barras" class="form-label">Código de Barras</label>
+                    <input type="text" id="codigo-barras" name="codigo-barras" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Imagen del Producto</label>
+                    <input type="file" id="imagen" name="imagen" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button class="btn DR mx-auto d-block" type="submit">Agregar Producto</button>
+                </div>
+            </form>
+        </article>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+   
+
+<!-- pie de pagina -->
+<div class="container-fluid bg-dark">
+<div class="container">
+
+    <section class="row text-light d-flex">
+
+    <article class="order-1 order-md-0 col-12 col-md-8 pt-3">
+<p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Luz Raquel Zabaleta Quispe</p>
+    </article>
+    <article class="pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+    <i class="bi bi-facebook fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.youtube.com/@brennerfineart">
+    <i class="bi bi-youtube fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.instagram.com/mediomixtoarte/reel/C7Cl1-QvPc5/">
+    <i class="bi bi-instagram fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://wa.link/gscbh9">
+    <i class="bi bi-whatsapp fs-3 "></i>
+</a>
+    </article>
+</section>
+
+</div>
+</div>
+    <script src="../js/bootstrap.bundle.min.js" ></script>
+    <script>
+        document.getElementById('productoForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            
+            // Validar Nombre del Producto
+            const nombreProducto = document.getElementById('nombre-producto');
+            const nombreError = document.getElementById('nombre-error');
+            if (nombreProducto.value.trim() === '') {
+                nombreError.style.display = 'block';
+                isValid = false;
+            } else {
+                nombreError.style.display = 'none';
+            }
+            
+            // Validar Descripción
+            const descripcion = document.getElementById('descripcion');
+            const descripcionError = document.getElementById('descripcion-error');
+            if (descripcion.value.trim() === '') {
+                descripcionError.style.display = 'block';
+                isValid = false;
+            } else {
+                descripcionError.style.display = 'none';
+            }
+            
+            // Validar Precio
+            const precioProducto = document.getElementById('precio-producto');
+            const precioError = document.getElementById('precio-error');
+            if (precioProducto.value <= 0) {
+                precioError.style.display = 'block';
+                isValid = false;
+            } else {
+                precioError.style.display = 'none';
+            }
+            
+            // Validar Categoría
+            const categoria = document.getElementById('categoria');
+            const categoriaError = document.getElementById('categoria-error');
+            if (categoria.value.trim() === '') {
+                categoriaError.style.display = 'block';
+                isValid = false;
+            } else {
+                categoriaError.style.display = 'none';
+            }
+            
+            // Validar Inventario
+            const inventario = document.getElementById('inventario');
+            const inventarioError = document.getElementById('inventario-error');
+            if (inventario.value < 0) {
+                inventarioError.style.display = 'block';
+                isValid = false;
+            } else {
+                inventarioError.style.display = 'none';
+            }
+            
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

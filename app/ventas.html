@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art 1.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body >
+
+    <!-- Header- menu de navegaciones -->
+    <div class="container-fluid">
+     <header class="row">
+     <div class="col-12 ">
+    
+        <nav class="py0 fixed-top navbar bg-beige navbar-expand-lg " >
+            <div class="container">
+                <a href="#principal" class="navbar-brand fw-bold">
+                 <img src="img/icon1.svg" width="25" class="me-3">
+                 Art 1.0
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active fw-bold">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedido.html" class="nav-link active fw-bold ">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ventas.html" class="nav-link active fw-bold">Ventas</a>
+                        </li>
+                        <!-- menu desplegable -->
+                        <li class="nav-item dropdown">
+                            <a 
+                            class="nav-link active dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                        >
+                                Registrar
+                            </a>
+                            <ul class="dropdown-menu DR">
+                                <li><a class="dropdown-item" href="producto.html">Producto</a></li>
+                                <li><a class="dropdown-item" href="categoria.html">Categoria</a></li>
+                                <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+                           
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="salir.html" class="nav-link active fw-bold">Salir</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+    
+      </div>
+    </header>
+    </div>
+
+<!-- FORMULARIO -->
+<div class="container" id="ventas">
+    <section class="row py-5">
+        <div class="col-12">
+            <h2 class="text-center py-4">Registrar Ventas</h2>
+        </div>
+        <article class="bg-light col-12 col-md-8 col-lg-6 mx-auto">
+            <form class="border p-4" action="post" method="post">
+                <div class="mb-3">
+                    <label for="producto" class="form-label">Producto:</label>
+                    <input type="text" id="producto" name="producto" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label">Precio:</label>
+                    <input type="number" step="0.01" id="precio" name="precio" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cliente" class="form-label">Nombre del Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="metodo-pago" class="form-label">Método de Pago:</label>
+                    <select id="metodo-pago" name="metodo-pago" class="form-select form-control" required>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                        <option value="qr">Código QR</option>
+                    </select>
+                </div>
+                <!-- Detalles adicionales para Tarjeta de Crédito -->
+                <div class="mb-3" id="detalles-tarjeta" style="display: none;">
+                    <label for="numero-tarjeta" class="form-label">Número de Tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" class="form-control">
+                    <label for="fecha-expiracion" class="form-label">Fecha de Expiración:</label>
+                    <input type="month" id="fecha-expiracion" name="fecha-expiracion" class="form-control">
+                    <label for="cvv" class="form-label">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" class="form-control">
+                </div>
+                <!-- Detalles adicionales para Código QR -->
+                <div class="mb-3" id="detalles-qr" style="display: none;">
+                    <label for="codigo-qr" class="form-label">Escanea el Código QR:</label>
+                    <input type="file" id="codigo-qr" name="codigo-qr" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button class="btn DR mx-auto d-block" type="submit">Registrar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+</div>
+
+
+<!-- pie de pagina -->
+<div class="container-fluid bg-dark">
+<div class="container">
+
+    <section class="row text-light d-flex">
+
+    <article class="order-1 order-md-0 col-12 col-md-8 pt-3">
+<p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Luz Raquel Zabaleta Quispe</p>
+    </article>
+    <article class="pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+    <i class="bi bi-facebook fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.youtube.com/@brennerfineart">
+    <i class="bi bi-youtube fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.instagram.com/mediomixtoarte/reel/C7Cl1-QvPc5/">
+    <i class="bi bi-instagram fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://wa.link/gscbh9">
+    <i class="bi bi-whatsapp fs-3 "></i>
+</a>
+    </article>
+</section>
+
+</div>
+</div>
+
+<script>
+    document.getElementById('metodo-pago').addEventListener('change', function() {
+        const metodoPago = this.value;
+        document.getElementById('detalles-tarjeta').style.display = (metodoPago === 'tarjeta') ? 'block' : 'none';
+        document.getElementById('detalles-qr').style.display = (metodoPago === 'qr') ? 'block' : 'none';
+    });
+</script>
+
+    <script src="../js/bootstrap.bundle.min.js" ></script>
+   
+</body>
+<script src="/js/script.js"></script>
+</body>
+</html>
