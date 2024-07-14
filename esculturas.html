@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtCreative</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body >
+
+    <!-- Header- menu de navegaciones -->
+    <div class="container-fluid">
+     <header class="row">
+     <div class="col-12 ">
+    
+        <nav class="py0 fixed-top navbar bg-beige navbar-expand-lg " >
+            <div class="container">
+                <a href="#principal" class="navbar-brand fw-bold">
+                 <img src="img/icon1.svg" width="25" class="me-3">
+                 ArtCreative
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active fw-bold">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#nosotros" class="nav-link active fw-bold ">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#productos" class="nav-link active fw-bold">Oferta</a>
+                        </li>
+                        <!-- menu desplegable -->
+                        <li class="nav-item dropdown">
+                            <a 
+                            class="nav-link active dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                        >
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu DR">
+                                <li><a class="dropdown-item" href="esculturas.html">Esculturas</a></li>
+                                <li><a class="dropdown-item" href="objetos.html">Objetos</a></li>
+                                <li><a class="dropdown-item" href="cuadros.html">Cuadros</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#direccion" class="nav-link active fw-bold">Direccion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contacto" class="nav-link active fw-bold">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+    
+      </div>
+    </header>
+    </div>
+
+
+    <!-- productos mostrar 12 productos -->
+<!-- Esculturas de arcilla -->
+<div class="container" id="arcilla">
+    <section class="row py-5">
+        <h2 class=" py-4 text-start">Esculturas de Cerámica</h2>
+        <!-- Insertar 12 productos con CARD - el componente article -->
+        <!-- ... (productos de arcilla) ... -->
+        <article class="card my-3">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer11.jpg" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Orgánica Surrealista</h5>
+                            <p class="card-text fw-bold">Precio: 1490 Bs.</p>
+                            <p class="card-text T">Artista: Karim Mazzawi <br>
+ 
+                            <b>Tamaño: 90 cm </b> <br>
+                           </p>
+                        
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer2.jpg" class="card-img-top" alt="Abstracción Dorada">
+                        <div class="card-body">
+                            <h5 class="card-title">Abstracción Dorada</h5>
+                            <p class="card-text fw-bold">Precio: 1470 Bs.</p>
+                            <p class="card-text T">Creador: Elena Robles <br>
+                           
+                                <b>Tamaño: 90 cm </b> <br>  </p>
+                        
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer3.jpg" class="card-img-top" alt="Cromosfera">
+                        <div class="card-body">
+                            <h5 class="card-title">Guerreros a Caballo</h5>
+                            <p class="card-text fw-bold">Precio: 31192 Bs.</p>
+                            <p class="card-text T">Creador: Carlos Méndez <br>
+                            
+                                <b>Tamaño: 50 cm </b> <br></p>
+                           
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer4.jpg" class="card-img-top" alt="Danza de los Colores">
+                        <div class="card-body">
+                            <h5 class="card-title">Danza de los Colores</h5>
+                            <p class="card-text fw-bold">Precio: 1500 Bs.</p>
+                            <p class="card-text T">Creador: Sofia Castillo <br>
+                           
+                                <b>Tamaño: 90 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer5.jpg" class="card-img-top" alt="Bosque Escarlata">
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Spirit Pintada</h5>
+                            <p class="card-text fw-bold">Precio: 485 Bs.</p>
+                            <p class="card-text T ">Creador: Aria L. <br>
+                            <b>Tamaño: 30 cm </b> </p>
+                           
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer6.jpg" class="card-img-top" alt="Ecos del Otoño">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabaza Jarrón de Montaje en Pared</h5>
+                            <p class="card-text fw-bold">Precio: 693 Bs.</p>
+                            <p class="card-text T">Creador: C. Akira <br>
+                            
+                                <b>Tamaño: 45 cm </b> <br> </p>
+                            
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer7.jpg" class="card-img-top" alt="Serenidad en la Sabana">
+                        <div class="card-body">
+                            <h5 class="card-title">Niña de 12</h5>
+                            <p class="card-text fw-bold">Precio: 1603 Bs.</p>
+                            <p class="card-text T">Creador: Amani Kifalu <br>
+                           
+                                <b>Tamaño: 30 cm </b> <br> </p>
+                            
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer8.jpg" class="card-img-top" alt="Guardianes del Bosque">
+                        <div class="card-body">
+                            <h5 class="card-title">Guanyin Avalokiteshvara 12</h5>
+                            <p class="card-text fw-bold">Precio: 901 Bs.</p>
+                            <p class="card-text T">Creador: Alexei Petrov <br>
+                            
+                                <b>Tamaño: 35 cm </b> <br> </p>
+                           
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer9.jpg" class="card-img-top" alt="Bosque Brumoso">
+                        <div class="discount-badge">35% de descuento</div>
+                        <div class="card-body">
+                            <h5 class="card-title">gatito de cerámica Price</h5>
+                            <p class="card-text fw-bold">Precio: 166 Bs.</p>
+                            <p class="card-text T">Creador: Luna García <br>
+                            
+                                <b>Tamaño: 15 cm </b> <br> </p>
+                            
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escCer10.jpg" class="card-img-top" alt="Niebla Azulada">
+                        <div class="discount-badge">15% de descuento</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ibicencas</h5>
+                            <p class="card-text fw-bold">Precio: 3805 Bs.</p>
+                            <p class="card-text T">Creador: Alex Martin <br>
+                           
+                                <b>Tamaño: 50 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+</div>
+
+<!-- Esculturas de madera -->
+<div class="container" id="madera">
+    <section class="row py-5">
+        <h2 class="text-start py-4 ">Esculturas de madera</h2>
+        <!-- ... (productos de madera) ... -->
+        <article class="card my-3">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad1.jpg" class="card-img-top" >
+                        <div class="discount-badge">15% de descuento</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tigre de madera China tallada en madera Boj</h5>
+                            <p class="card-text fw-bold">Precio: 126.45 Bs.</p>
+                            <p class="card-text T">Creador: Alex Martin <br>
+                           
+                                <b>Tamaño: 70 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad2.jpg" class="card-img-top" alt="Abstracción Dorada">
+                        <div class="discount-badge">5% de descuento</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Oso tallado con ojos de vidrio firmada cabina rústica</h5>
+                            <p class="card-text fw-bold">Precio: 2175 Bs.</p>
+                            <p class="card-text T">Creador: Carla Sanchez <br>
+                           
+                                <b>Tamaño: 80 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad3.jpg" class="card-img-top" alt="Cromosfera">
+                
+                        <div class="card-body">
+                            <h5 class="card-title">Dragón de madera de boj tallada </h5>
+                            <p class="card-text fw-bold">Precio: 130 Bs.</p>
+                            <p class="card-text T">Creador: Robert Mendez <br>
+                           
+                                <b>Tamaño: 10 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad4.jpg" class="card-img-top" alt="Danza de los Colores">
+                        <div class="discount-badge">15% de descuento</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pie Grande Sasquatch Champiñón 34</h5>
+                            <p class="card-text fw-bold">Precio: 2413 Bs.</p>
+                            <p class="card-text T">Creador: Sofia Castillo <br>
+                           
+                                <b>Tamaño: 70 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad5.jpg" class="card-img-top" alt="Bosque Escarlata">
+                      
+                        <div class="card-body">
+                            <h5 class="card-title">Oso de bienvenida 33</h5>
+                            <p class="card-text fw-bold">Precio: 2406 Bs.</p>
+                            <p class="card-text T">Creador: Ruben Toledo <br>
+                           
+                                <b>Tamaño: 50 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4" id="product8">
+                    <div class="card product-card">
+                        <img src="img1/escMad6.jpg" class="card-img-top" alt="Ecos del Otoño">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Tigre adorno chino doble cara</h5>
+                            <p class="card-text fw-bold">Precio: 195 Bs.</p>
+                            <p class="card-text T">Creador: Carol Akira <br>
+                           
+                                <b>Tamaño: 10 cm </b> <br> </p>
+                          
+                            <a href="#" class="btn btn-dark add-to-cart">Añadir a carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+</div>
+
+
+
+
+
+
+   
+
+<!-- pie de pagina -->
+<div class="container-fluid bg-dark">
+<div class="container">
+
+    <section class="row text-light d-flex">
+
+    <article class="order-1 order-md-0 col-12 col-md-8 pt-3">
+<p class="text-center text-md-start">Copyright &copy;2024 - Desarrollado por: Luz Raquel Zabaleta Quispe</p>
+    </article>
+    <article class="pt-2 order-0 order-md-1 col-12 col-md-4 d-flex justify-content-evenly ">
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.facebook.com/itboliviamar.edu.bo">
+    <i class="bi bi-facebook fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.youtube.com/@brennerfineart">
+    <i class="bi bi-youtube fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://www.instagram.com/mediomixtoarte/reel/C7Cl1-QvPc5/">
+    <i class="bi bi-instagram fs-3 "></i>
+</a>
+<a class="link-light link-opacity-75-hover text-decoration-none" target="_blank" href="https://wa.link/gscbh9">
+    <i class="bi bi-whatsapp fs-3 "></i>
+</a>
+    </article>
+</section>
+
+</div>
+</div>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>
